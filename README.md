@@ -3,10 +3,23 @@
 ## 实现路径
 
 - 题目1：
+
   - 1.1：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 reverse() 函数
   - 1.2：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 countLetters() 函数
   - 1.3：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 printMostFrequentLetters() 函数
   - 1.4：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 longestSubstring() 函数
+
+- 题目2：
+
+  - 2.1：
+
+    - '\src\main\java\com\ksyun\whgc\yinruiyi\Student.java'
+
+      定义一个学生类，包括姓名、年龄、住址和出生年月等属性，使用了@Property注解来标注每个属性的名称
+
+    - '\src\main\java\com\ksyun\whgc\yinruiyi\Property.java'
+
+      使用@Retention和@Target注解来指定注解的生命周期和使用范围，并定义了一个name属性来表示属性的名称
 
 
 
@@ -42,7 +55,9 @@
     不含有重复字符的最长子串：bca
     ```
 
-    
+- 题目2：
+
+
 
 ## Git 提交信息
 
@@ -50,4 +65,5 @@
 
 - 提交记录 2：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 09:13:48 2023 +0800
 - 提交记录 3：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 09:19:36 2023 +0800
-- 提交记录 4：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
+- 提交记录 4：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 09:24:10 2023 +0800
+- 提交记录 5：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
