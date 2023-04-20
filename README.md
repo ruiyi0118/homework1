@@ -5,6 +5,7 @@
 - 题目1：
   - 1.1：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 reverse() 函数
   - 1.2：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 countLetters() 函数
+  - 1.3：'\src\main\java\com\ksyun\whgc\yinruiyi\StringUtils.java'下的 printMostFrequentLetters() 函数
 
 
 
