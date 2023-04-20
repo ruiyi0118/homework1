@@ -23,7 +23,14 @@
 
     ```
     请输入原始字符串：Hello World!
-    Letter count map: { =1, !=1, r=1, d=1, e=1, W=1, H=1, l=3, o=2}
+    每个字母出现的次数: { =1, !=1, r=1, d=1, e=1, W=1, H=1, l=3, o=2}
+    ```
+
+  - 1.3：'\src\test\java\TestStringUtils.java'，输入/输出样例：
+
+    ```
+    请输入原始字符串：Hello World!
+    出现次数最多的字母是：l，它出现了 3 次。
     ```
 
     
@@ -32,4 +39,5 @@
 
 - 提交记录 1：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 08:55:39 2023 +0800
 
-- 提交记录 2：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
+- 提交记录 2：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 09:13:48 2023 +0800
+- 提交记录 3：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：

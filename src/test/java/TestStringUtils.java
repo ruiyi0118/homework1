@@ -13,5 +13,7 @@ public class TestStringUtils {
 
         Map<Character, Integer> countMap = StringUtils.countLetters(s);
         System.out.println("每个字母出现的次数: " + countMap);
+
+        StringUtils.printMostFrequentLetters(s);
     }
 }

@@ -19,4 +19,18 @@ public class StringUtils {
         }
         return map;
     }
+
+    // 打印出现次数最多的字母及其次数
+    public static void printMostFrequentLetters(String s) {
+        Map<Character, Integer> map = countLetters(s);
+        int maxCount = 0;
+        char maxChar = '\0';
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > maxCount) {
+                maxCount = entry.getValue();
+                maxChar = entry.getKey();
+            }
+        }
+        System.out.println("出现次数最多的字母是：" + maxChar + "，它出现了 " + maxCount + " 次。");
+    }
 }
