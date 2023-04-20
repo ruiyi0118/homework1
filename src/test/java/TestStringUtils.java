@@ -15,5 +15,8 @@ public class TestStringUtils {
         System.out.println("每个字母出现的次数: " + countMap);
 
         StringUtils.printMostFrequentLetters(s);
+
+        String longestSubstring = StringUtils.longestSubstring("abbcabcbb");
+        System.out.println("不含有重复字符的最长子串：" + longestSubstring);
     }
 }

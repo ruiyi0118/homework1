@@ -1,7 +1,9 @@
 package com.ksyun.whgc.yinruiyi;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class StringUtils {
 
@@ -32,5 +34,27 @@ public class StringUtils {
             }
         }
         System.out.println("出现次数最多的字母是：" + maxChar + "，它出现了 " + maxCount + " 次。");
+    }
+
+    // 返回不含有重复字符的最长子串
+    public static String longestSubstring(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        String longest = "";
+        int i = 0, j = 0;
+        while (j < n) {
+            char c = s.charAt(j);
+            if (!set.contains(c)) {
+                set.add(c);
+                j++;
+                if (j - i > longest.length()) {
+                    longest = s.substring(i, j);
+                }
+            } else {
+                set.remove(s.charAt(i));
+                i++;
+            }
+        }
+        return longest;
     }
 }
