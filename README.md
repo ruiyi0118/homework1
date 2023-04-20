@@ -23,7 +23,11 @@
 
   - 2.2：'src/main/java/com/ksyun/whgc/yinruiyi/CollectionUtils.java'，定义一个工具类来输出集合对象
 
+- 题目3：'src/main/java/com/ksyun/whgc/yinruiyi/PrintThread.java'
 
+  PrintThread类实现了Runnable接口，其中run方法中的逻辑是保证每个线程按照ABCABC...的顺序打印自己的ID值。
+
+------
 
 ## 测试方法
 
@@ -61,7 +65,17 @@
 
   ![image-20230420164423754](C:\Users\90606\AppData\Roaming\Typora\typora-user-images\image-20230420164423754.png)
 
+- 题目3：'src/test/java/TestPrintThread.java'，输出样例：
 
+  ```
+  输出：ACBACBACBACBACB
+  ```
+
+  ​	在每个线程中，首先通过prev锁来保证前一个线程已经打印完自己的ID值。然后通过self锁来打印自己的ID值，并通知下一个线程可以开始打印了。最后线程释放self锁，并等待前一个线程的通知，从而保证了三个线程的执行顺序。
+
+  
+
+------
 
 ## Git 提交信息
 
@@ -72,3 +86,4 @@
 - 提交记录 4：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 09:24:10 2023 +0800
 - 提交记录 5：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 09:34:46 2023 +0800
 - 提交记录 6：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Thu Apr 20 16:35:35 2023 +0800
+- 提交记录 7：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
