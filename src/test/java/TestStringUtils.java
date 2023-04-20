@@ -1,5 +1,6 @@
 import com.ksyun.whgc.yinruiyi.StringUtils;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class TestStringUtils {
@@ -9,5 +10,8 @@ public class TestStringUtils {
         String s = in.nextLine();
         String reversed = StringUtils.reverse(s);
         System.out.println("反转的字符串为: " + reversed);
+
+        Map<Character, Integer> countMap = StringUtils.countLetters(s);
+        System.out.println("每个字母出现的次数: " + countMap);
     }
 }
